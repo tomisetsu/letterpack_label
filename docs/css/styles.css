@@ -87,10 +87,6 @@ button:active{
     left: 40%;
     background: var(--plus-color2);
 }
-#blogger{
-    left: 60%;
-    background: var(--plus-color1);
-}
 
 span.p-country-name{
     display: none;

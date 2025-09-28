@@ -32,7 +32,6 @@
     </script>
     <script type="text/javascript" src="updated.js"></script>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8"></script>
     <script type="text/javascript" src="scripts/file_dl.js"></script>
     <script type="text/javascript" src="scripts/file_load.js"></script>
     <script type="text/javascript" src="scripts/form_script.js"></script>
@@ -44,9 +43,9 @@
 <div id="base_div">
     <img id="base_img" src="imgs/plus_base.png">
     <div id="head1">
-        <a id="head_title" href="http://www.post.japanpost.jp/service/letterpack/" target="_blank">
+        <span id="head_title">
             続・レターパックプラスラヴェルメイカー
-        </a>
+        </span>
         <div id="overview">
             フォーム入力だけで作成出来ます。<br>
             文字数オーバーすると赤くなります。(そのままでもPDF出力は可能です。)<br>
@@ -56,7 +55,6 @@
     <button id="reverse_btn" class="h_btn" title="ToとFromを入れ替え">Reverse</button>
     <button id="clear_to_btn" class="h_btn" title="お届け先削除">Clear To</button>
     <button id="clear_all_btn" class="h_btn" title="全削除">Clear All</button>
-    <button id="blogger" class="h_btn" title="コメントなど">Blogger</button>
 
     <form class="h-adr">
         <span class="p-country-name">Japan</span>
@@ -96,9 +94,6 @@
 
 </div>
     <script type="text/javascript">
-        document.getElementById('blogger').onclick = function () {
-            open('http://satuptown.blogspot.com/2018/09/blog-post.html');
-        };
         document.getElementById('make_btn').onclick = function () {
             makePDF();
         };
